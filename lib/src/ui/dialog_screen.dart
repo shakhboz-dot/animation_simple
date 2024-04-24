@@ -2,15 +2,15 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class DialogScreen extends StatefulWidget {
+  const DialogScreen({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<DialogScreen> createState() => _DialogScreenState();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 3;
+class _DialogScreenState extends State<DialogScreen> {
+  int _counter = 6;
 
   @override
   Widget build(BuildContext context) {

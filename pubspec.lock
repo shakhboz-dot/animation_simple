@@ -17,6 +17,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.1.1"
+  bounce:
+    dependency: "direct main"
+    description:
+      name: bounce
+      sha256: c213b754bf1c6d6793dea93e621c6e309ab07543aa1208351e0c7297a1fbafce
+      url: "https://pub.dev"
+    source: hosted
+    version: "1.0.2"
   characters:
     dependency: transitive
     description:
@@ -152,6 +160,30 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.11.0"
+  motion:
+    dependency: "direct main"
+    description:
+      name: motion
+      sha256: "307e266730f56f53bafb2bc3d9622a8ef220cae2711402a2b42cbfd68d114d4f"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
+  motion_platform_interface:
+    dependency: transitive
+    description:
+      name: motion_platform_interface
+      sha256: b1f18343564450158c0ec0f6707937544831367f5eafae57d9f15708e3bf0ad0
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
+  motion_web:
+    dependency: transitive
+    description:
+      name: motion_web
+      sha256: "848c98f852acb9447ff786f59edd33642e9ee92ef58f31e2aa3e9fd66d15e4c6"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.0"
   path:
     dependency: transitive
     description:
@@ -261,6 +293,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "13.0.0"
+  web:
+    dependency: transitive
+    description:
+      name: web
+      sha256: "97da13628db363c635202ad97068d47c5b8aa555808e7a9411963c533b449b27"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.5.1"
 sdks:
   dart: ">=3.3.0 <4.0.0"
   flutter: ">=3.19.0"

@@ -33,6 +33,7 @@ class _TiltDemoState extends State<TiltDemo> {
       backgroundColor: const Color(0xFFFFFFFF),
       body: Center(
         child: Tilt(
+          clipBehavior: Clip.hardEdge,
           borderRadius: BorderRadius.circular(24),
           tiltConfig: const TiltConfig(
             enableGestureTouch: false,
