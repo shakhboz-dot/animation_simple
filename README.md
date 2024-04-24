@@ -1,4 +1,4 @@
-# dialog_animation
+# Simple animations
 
 A new Flutter project.
 
