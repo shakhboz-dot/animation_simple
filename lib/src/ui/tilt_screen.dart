@@ -1,3 +1,4 @@
+import 'dart:async';
 
 import 'package:flutter/material.dart';
 
@@ -13,6 +14,13 @@ class TiltDemo extends StatefulWidget {
 class _TiltDemoState extends State<TiltDemo> {
   int _counter = 0;
 
+  StreamController<TiltStreamModel> tiltStreamModel = StreamController();
+
+  @override
+  void initState() {
+    super.initState();
+  }
+
   void _incrementCounter() {
     setState(() {
       _counter++;
@@ -26,17 +34,13 @@ class _TiltDemoState extends State<TiltDemo> {
       body: Center(
         child: Tilt(
           borderRadius: BorderRadius.circular(24),
-          tiltConfig: const TiltConfig(angle: 15),
-          lightConfig: const LightConfig(
-            minIntensity: 0.1,
+          tiltConfig: const TiltConfig(
+            enableGestureTouch: false,
+            enableRevert: false,
+            enableSensorRevert: false,
+            filterQuality: FilterQuality.high,
           ),
-          shadowConfig: const ShadowConfig(
-            minIntensity: 0.05,
-            maxIntensity: 0.4,
-            offsetFactor: 0.08,
-            minBlurRadius: 10,
-            maxBlurRadius: 15,
-          ),
+          lightConfig: const LightConfig(),
           childLayout: ChildLayout(
             outer: [
               Positioned(
@@ -100,8 +104,8 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return SizedBox(
-      width: 250,
-      height: 450,
+      width: 300,
+      height: 500,
       child: Scaffold(
         primary: false,
         backgroundColor: const Color(0x206D6E6F),

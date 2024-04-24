@@ -1,7 +1,9 @@
 import 'dart:async';
 
-import 'package:dialog_animation/dialog_screen.dart';
-import 'package:dialog_animation/tilt_screen.dart';
+import 'package:dialog_animation/src/ui/dialog_screen.dart';
+import 'package:dialog_animation/src/ui/main_screen.dart';
+import 'package:dialog_animation/src/ui/sensors_screen.dart';
+import 'package:dialog_animation/src/ui/tilt_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -23,7 +25,7 @@ class MyApp extends StatelessWidget {
           titleTextStyle: TextStyle(color: Colors.white),
         ),
       ),
-      home: const TiltDemo(),
+      home: const MainScreen(),
     );
   }
 }
